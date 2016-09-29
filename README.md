@@ -119,9 +119,9 @@ Go to apple developer site and download and install Command Line Tools (macOS 10
  
  
  
- ==============
-   Credits 
- ==============
+==============
+  Credits 
+==============
  
  * Based in soarqin good work at https://github.com/soarqin/vitasdk-msys2
  * Previous work for osx at https://github.com/psxdev/vitasdk-buildscripts 
