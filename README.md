@@ -31,8 +31,8 @@ Go to apple developer site and download and install Command Line Tools (macOS 10
  * TextMate from https://macromates.com/
  * iTerm from https://www.iterm2.com/
  * Enable root account (Open Directory Utility in drop down "Edit Menu" enable root user and it will ask you to set a password for root user)
-
- 5) Install macports (other people use homebrew instead)
+ 
+5) Install macports (other people use homebrew instead)
  
  Go to https://www.macports.org/install.php and follow steps described for macOS Sierra
  
