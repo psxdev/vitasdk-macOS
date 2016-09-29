@@ -1,0 +1,26 @@
+diff -ur gcc-6.2.0-orig/gcc/config/arm/arm-c.c gcc-6.2.0/gcc/config/arm/arm-c.c
+--- gcc-6.2.0-orig/gcc/config/arm/arm-c.c	2016-02-24 16:19:12.000000000 +0800
++++ gcc-6.2.0/gcc/config/arm/arm-c.c	2016-09-05 12:36:27.548356500 +0800
+@@ -62,6 +62,8 @@
+ static void
+ arm_cpu_builtins (struct cpp_reader* pfile)
+ {
++  builtin_define ("__vita__");
++
+   def_or_undef_macro (pfile, "__ARM_FEATURE_DSP", TARGET_DSP_MULTIPLY);
+   def_or_undef_macro (pfile, "__ARM_FEATURE_QBIT", TARGET_ARM_QBIT);
+   def_or_undef_macro (pfile, "__ARM_FEATURE_SAT", TARGET_ARM_SAT);
+diff -ur gcc-6.2.0-orig/gcc/gcc.c gcc-6.2.0/gcc/gcc.c
+--- gcc-6.2.0-orig/gcc/gcc.c	2016-08-15 19:19:34.000000000 +0800
++++ gcc-6.2.0/gcc/gcc.c	2016-09-05 12:33:17.920479300 +0800
+@@ -658,8 +658,9 @@
+ #endif
+ 
+ /* config.h can define LIB_SPEC to override the default libraries.  */
++#undef LIB_SPEC
+ #ifndef LIB_SPEC
+-#define LIB_SPEC "%{!shared:%{g*:-lg} %{!p:%{!pg:-lc}}%{p:-lc_p}%{pg:-lc_p}}"
++#define LIB_SPEC "%{!shared:%{g*:-lg} %{!p:%{!pg:-lc}}%{p:-lc_p}%{pg:-lc_p}} -lSceRtc_stub -lSceKernel_stub -lSceNet_stub"
+ #endif
+ 
+/* When using -fsplit-stack we need to wrap pthread_create, in order
