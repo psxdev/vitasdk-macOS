@@ -117,6 +117,24 @@ Go to apple developer site and download and install Command Line Tools (macOS 10
  
  11) Ready to have a lot of fun :)
  
+==============
+  Versions of software downloaded internally by build proccess 
+============== 
+* http://ftp.gnu.org/gnu/libiconv/libiconv-1.14.tar.gz
+* http://ftp.gnu.org/gnu/gmp/gmp-6.1.1.tar.xz
+* http://ftp.gnu.org/gnu/mpfr/mpfr-3.1.4.tar.xz
+* http://ftp.gnu.org/gnu/mpc/mpc-1.0.3.tar.gz
+* http://ftp.gnu.org/gnu/binutils/binutils-2.26.1.tar.bz2
+* http://ftp.gnu.org/gnu/gcc/gcc-6.2.0/gcc-6.2.0.tar.bz2
+* http://www.mr511.de/software/libelf-1.2.8.tar.gz
+* http://isl.gforge.inria.fr/isl-0.17.1.tar.xz
+* http://nih.at/libzip/libzip-1.1.3.tar.xz
+* http://zlib.net/zlib-1.2.8.tar.xz
+* http://github.com/akheron/jansson/archive/v2.8.tar.gz
+* http://github.com/vitasdk/vita-headers
+* http://github.com/vitasdk/newlib
+* http://github.com/vitasdk/pthread-embedded
+* http://github.com/vitasdk/vita-toolchain
  
  
 ==============
