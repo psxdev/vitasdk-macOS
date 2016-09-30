@@ -124,7 +124,7 @@ Go to apple developer site and download and install Command Line Tools (macOS 10
 * http://ftp.gnu.org/gnu/gmp/gmp-6.1.1.tar.xz
 * http://ftp.gnu.org/gnu/mpfr/mpfr-3.1.4.tar.xz
 * http://ftp.gnu.org/gnu/mpc/mpc-1.0.3.tar.gz
-* http://ftp.gnu.org/gnu/binutils/binutils-2.26.1.tar.bz2
+* git://sourceware.org/git/binutils-gdb.git
 * http://ftp.gnu.org/gnu/gcc/gcc-6.2.0/gcc-6.2.0.tar.bz2
 * http://www.mr511.de/software/libelf-1.2.8.tar.gz
 * http://isl.gforge.inria.fr/isl-0.17.1.tar.xz

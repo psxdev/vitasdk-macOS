@@ -190,12 +190,11 @@ fi
 
 if [ ${STEP4} ]; then
   echo "[Step 4] Build binutils..."
-  cd ${DOWNLOADDIR}
-  if [ ! -f binutils-${BINUTILS_VERSION}.tar.bz2 ]; then
-    curl -L -O http://ftp.gnu.org/gnu/binutils/binutils-${BINUTILS_VERSION}.tar.bz2
+  cd ${SRCDIR}
+  if [ ! -d ${SRCDIR}/binutils-${BINUTILS_VERSION}/.git ]; then
+    git clone git://sourceware.org/git/binutils-gdb.git binutils-${BINUTILS_VERSION}
   fi
-  tar xjf binutils-${BINUTILS_VERSION}.tar.bz2 -C ${SRCDIR}
-  cd ${SRCDIR}/binutils-${BINUTILS_VERSION}
+  cd binutils-${BINUTILS_VERSION}
   patch -p1 < ${PATCHDIR}/binutils.patch
   #patch -p1 < ${PATCHDIR}/binutils-mingw.patch
   rm -rf ${BUILDDIR}/binutils-${BINUTILS_VERSION}
